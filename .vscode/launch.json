@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C-SPY Simulator",
+            "type": "cspy",
+            "request": "launch",
+            "target": "arm",
+            "program": "${command:cmake.launchTargetPath}",
+            "stopOnSymbol": "main",
+            "workbenchPath": "/opt/iar/cxarm",
+            "driver": "Simulator",
+            "driverOptions": [
+                "--endian=little",
+                "--cpu=Cortex-M4",
+                "--fpu=None",
+                "--semihosting"
+            ]
+        }
+
+    ]
+}
