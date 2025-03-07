@@ -1,0 +1,17 @@
+{
+    "image": "ghcr.io/fae-emea/cxarm:9.60.4-st",
+    "containerEnv": {
+      "IAR_LMS_BEARER_TOKEN": "${localEnv:IAR_LMS_BEARER_TOKEN}"
+    },
+    "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-vscode.vscode-serial-monitor",
+        "github.vscode-github-actions",
+        "iarsystems.iar-debug"
+        ]
+      }
+    }
+  }
