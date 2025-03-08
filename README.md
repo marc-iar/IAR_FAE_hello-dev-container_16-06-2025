@@ -15,7 +15,7 @@ A simple demonstration of a Dev Container with the IAR Build Tools in GitHub Cod
 
 ![Screenshot_20250307_172635](https://github.com/user-attachments/assets/3997424c-143e-445e-86ba-4cf9fc9d08a8)
 
-5. From the Extensions panel, reach out to the CMake extension and select your configuration preset.
+5. From the Extensions panel, reach out to the CMake extension and select your [configuration preset](https://cmake.org/cmake/help/v3.31/manual/cmake-presets.7.html).
 
 ![Screenshot_20250307_172914](https://github.com/user-attachments/assets/218c67be-d227-483d-9db8-29da7df2868d)
 
