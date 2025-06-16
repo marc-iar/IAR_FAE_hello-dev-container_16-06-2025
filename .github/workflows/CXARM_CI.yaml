@@ -37,17 +37,9 @@ jobs:
     steps:      
     - name: Checkout project
       uses: actions/checkout@v4
-    - name: CMake - Configure        
-      run: cmake --preset cxarm-linux   
     - name: IAR C-STAT, Static Analysis
       working-directory: EWARM
-      run: |
-        apt-get update
-        apt-get -y install xmlstarlet
-        xmlstarlet ed --inplace -u '//cmakePath' -v '/usr/bin/cmake' light-effects-cmake.ewp
-        xmlstarlet ed --inplace -u '//cmakePresetName' -v 'cxarm-linux' light-effects-cmake.ewp
-        xmlstarlet ed --inplace -u '//cmakeOverrideToolEnvs' -v 'false' light-effects-cmake.ewp
-        iarbuild light-effects-cmake.ewp -cstat_analyze Debug -log all -parallel 4
+      run: iarbuild light-effects-cmake.ewp -cstat_analyze Debug -log all -parallel 4
 
   deploy:
     name: Deploy
